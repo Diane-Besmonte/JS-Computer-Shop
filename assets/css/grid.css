@@ -1,0 +1,27 @@
+.col {
+    /* display: block; */
+    min-height: 100px;
+    /* max-width: 300px; */
+    padding: 5px;
+  }
+  
+  /* Small devices */
+  @media (min-width: 320px) {
+    .col-sm-12 {
+      width: calc(100% / 12 * 12);
+    }
+  }
+  
+  /* Medium devices */
+  @media (min-width: 768px) {
+    .col-md-6 {
+      width: calc(100% / 12 * 4);
+    }
+  }
+  
+  /* Large devices */
+  @media (min-width: 1024px) {
+    .col-lg-3 {
+      width: calc(100% / 12 * 3);
+    }
+  }

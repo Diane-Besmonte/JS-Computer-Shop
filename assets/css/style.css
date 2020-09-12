@@ -1,0 +1,145 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* color and fonts */
+:root {
+    /* --bg-body: #303030; */
+     --bg-body: #1e1a3e;
+    --bg-border: #2fb45a;
+    --bg-white: #f1f1f1;
+    /* --font: 'Neuton', serif;
+    --font2: -apple-system, BlinkMacSystemFont, 
+      "Segoe UI", "Roboto", "Oxygen", 
+      "Ubuntu", "Cantarell", "Fira Sans", 
+      "Droid Sans", "Helvetica Neue", sans-serif; */
+  } 
+
+body {
+  background-color:var(--bg-body);
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label-input {
+  color: var(--bg-white);
+}
+
+h1 {
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  from {color:greenyellow;}
+  to {color:yellow;}
+}
+
+
+h1, h2 {
+  text-align: center;
+  padding-top: 20px;
+  color: var(--bg-white);
+}
+
+.bg-color {
+  /* background-color: var(--bg-white); */
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: var(--bg-border);
+  border-style: solid;
+  border-width: 3px;
+}
+
+.bg-color:hover { background-color: #2b2557; }
+
+.padding-top {
+  padding-top: 40px;
+}
+
+.paddings {
+  padding: 30px 20px;
+}
+
+#form1 {
+  padding: 30px 0px;
+}
+
+.label-input {
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+}
+
+.button {
+  background-color: #647b80;
+  color: #f8f8f8;
+  width: 100px;
+  height: 30px;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: inset 0 0 0 2em #2240eb;
+}
+
+.text-input {
+  background-color: #f8f8f8;
+  color: #303030;
+  height: 30px;
+  max-width:130px;
+}
+
+
+/* modal */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #326ab2;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 25px;
+}
+
+span {
+  display: inline;
+}
+

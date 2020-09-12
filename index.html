@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Computer Shop</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/grid.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<!-- forms -->
+	<section>
+		<div class="container padding-top">
+			<h1 class="paddings">Computer Shop Time Logs</h1>
+			<div class="row">
+
+				<div class="col col-lg-3 col-md-6 col-sm-12">
+					<div class="bg-color">
+						<h2>PC No. 1</h2>
+						<form action="/action_page.php" class="formCont" id="form1">
+							<label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="timeLeft text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content1">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 1</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form> 
+
+        </div>
+      </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 2</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content2">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 2</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form> 
+        </div>
+       </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 3</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content3">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 3</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form>
+        </div>
+       </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 4</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content4">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 4</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form>
+        </div>
+       </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 5</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content5">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 5</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form>
+        </div>
+      </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 6</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content6">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 6</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form>
+        </div>
+       </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 7</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content7">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 7</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form>
+        </div>
+       </div>
+
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class ="bg-color">
+          <h2>PC No. 8</h2>
+          <form action="/action_page.php" class="formCont" id="form1">
+            <label class="label-input" for="time">Time:</label>
+            <input class="userTime text-input" type="text" id="time" name="time" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="left">Time Left:</label>
+            <input class="text-input" type="text" id="left" name="left" placeholder=" 00:00" readonly><br><br>
+            <label class="label-input" for="price">Total Price:</label>
+            <input class="userPrice text-input" type="text" id="price" name="price" placeholder=" P0.00"readonly><br><br>
+            <input class="myBtn button" type="button" value="Update">
+            <input class="button" type="reset" value="Stop">
+
+            <!-- The Modal -->
+            <div class="modal myModal">
+
+            <!-- Modal content -->
+              <div class="modal-content" id="modal-content8">
+             <form action="/action_page.php" id="form2">
+                <h2>PC No. 8</h2><br>
+                <label class="label-input" for="time">Hour:</label>
+                <input class="hours text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="1" max="10"><br><br>
+
+                <label class="label-input" for="time">Minutes:</label>
+                <input class="minutes text-input" type="number" id="time" name="time" value="0" placeholder=" 00:00" min="0" max="59"><br><br>
+                <input class="addBtns button" type="button" value="Add">
+
+                <span class="close"><input class="button" type="reset" value="Cancel"></span>
+                </form> 
+              </div>
+            </div>
+
+            </form>
+        </div>
+       </div>
+    </div>
+
+  </div>
+</section>
+    
+    <!-- JS script -->
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
