@@ -12,11 +12,8 @@
      --bg-body: #1e1a3e;
     --bg-border: #2fb45a;
     --bg-white: #f1f1f1;
-    /* --font: 'Neuton', serif;
-    --font2: -apple-system, BlinkMacSystemFont, 
-      "Segoe UI", "Roboto", "Oxygen", 
-      "Ubuntu", "Cantarell", "Fira Sans", 
-      "Droid Sans", "Helvetica Neue", sans-serif; */
+    --font: 'Stint Ultra Expanded', cursive;
+    --font2: 'Pontano Sans', sans-serif;
   } 
 
 body {
@@ -46,10 +43,19 @@ section {
 
 .label-input {
   color: var(--bg-white);
+  font-family: var(--font2);
+  font-size: 15px;
 }
 
 h1 {
   animation: mymove 2s infinite;
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: var(--font);
 }
 
 @keyframes mymove {
@@ -98,6 +104,7 @@ h1, h2 {
   color: #f8f8f8;
   width: 100px;
   height: 30px;
+  margin: 2px 0px;
 }
 
 .button:hover,

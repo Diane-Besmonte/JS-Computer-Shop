@@ -26,41 +26,44 @@ let myBtnAdd = document.getElementsByClassName("addBtns")
 let formPrice = document.getElementsByClassName("userPrice");
 let changeColor = document.getElementsByClassName("bg-color");
 let timerInput = document.getElementsByClassName("timeLeft");
+let stopTimer = document.getElementsByClassName("stop");
+let removeUser = document.getElementsByClassName("remove");
 
 
-for (let i = 0; i < myBtnAdd.length; i++) {
-  myBtnAdd[i].onclick = function () {
+// for (let i = 0; i < myBtnAdd.length; i++) {
+  myBtnAdd[0].onclick = function () {
 
     //display Time @ Form
 
-    changeColor[i].style.borderColor = "#009ffd"
+    changeColor[0].style.borderColor = "#009ffd";
 
-    modal[i].style.display = "none";
-    formTime[i].readOnly = false;
+    modal[0].style.display = "none";
+    formTime[0].readOnly = false;
 
-    if (modalHour[i].value.length < 2) {
-    modalHour[i].value = "0" + modalHour[i].value;
+    if (modalHour[0].value.length < 2) {
+    modalHour[0].value = "0" + modalHour[0].value;
     }
 
-    if (modalMin[i].value.length < 2) {
-    modalMin[i].value = "0" + modalMin[i].value;
+    if (modalMin[0].value.length < 2) {
+    modalMin[0].value = "0" + modalMin[0].value;
     }
 
-    formTime[i].value = modalHour[i].value + ":" + modalMin[i].value;
-    let forPrice = formTime[i].value.split(":");
+    formTime[0].value = modalHour[0].value + ":" + modalMin[0].value;
+    let forPrice = formTime[0].value.split(":");
     let priceHr = forPrice[0]*20;
     let priceMin = Math.round((forPrice[1]/30)*10);
-    console.log(formPrice[i].value = `Php ${priceHr + priceMin}.00`);
-    
-// for countdown timer
+    console.log(formPrice[0].value = `Php ${priceHr + priceMin}.00`);
+
+    // second = 59;
+    // timer[i].value = formTime[i].value  + ":" + second;
+
+
 function startTimer(duration, display) {
         var timer = duration,hours, minutes, seconds;
 
         let interval = setInterval(function () {
             hours = parseInt(timer/60/60,10)
             minutes = parseInt(timer / 60 % 60, 10);
-
-
 
             // console.log(minutes);
 
@@ -76,28 +79,46 @@ function startTimer(duration, display) {
 
             console.log(timer)
             if (--timer == 300) {
-                alert("5 Mins ka nalang");
+                  Swal.fire(
+                    'Reminder',
+                    'Only 5 minutes left',
+                    'question'
+                  )
+              if (--timer <= 300) {
+                changeColor[0].style.borderColor = "red";
+                }
+            } else if (timer < 0) {
+              clearInterval(interval);
             }
 
-            if (--timer < 0) {
-                clearInterval(interval);
-            }
         }, 1000);
 
-        if (minutes < 1 && seconds <= 50) {
-          changeColor[i].style.borderColor = "red";
-         }
+        // pause timer/ stop button
+        stopTimer[0].onclick = function stopCountdown() {
 
+            clearInterval(interval);
+            Swal.fire(
+              'Checkout',
+              'Your total bill:' + formPrice[0].value,
+              'success'
+            )
+        };
     };
 
-        var inputMin = 60 * modalMin[i].value;
-        var inputHour = 60*60*modalHour[i].value;
+        var inputMin = 60 * modalMin[0].value;
+        var inputHour = 60*60*modalHour[0].value;
         var totalTime = inputMin + inputHour;
         display = document.getElementsByClassName("timeLeft");
 
         startTimer(totalTime, display);
+
+// bg change color
+          if (timerInput["left"].value > 5 ) {
+          changeColor[0].style.borderColor = "blue";
+         } 
+        //  console.log(timerInput["left"].value);
 };
-};
+// };
 
 // When the user clicks on <span> (x), close the modal
 for (let i = 0; i < span.length; i++) {
@@ -112,3 +133,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// remove user
+removeUser[0].onclick = function removed() {
+    changeColor[0].style.borderColor = "green";
+  };
